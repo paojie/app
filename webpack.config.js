@@ -44,16 +44,16 @@ module.exports = {
 
     devServer: {
         historyApiFallback: true,
-        port: 8090,
-        proxy: {
-            '/api': {
-                target: 'http://localhost:3000',
-                changeOrigin: true,
-                secure: false,
-                logLevel: "silent"
-                // secure: true
-            }
-        }
+        // port: 8090,
+        // proxy: {
+        //     '/api': {
+        //         target: 'http://localhost:3000',
+        //         changeOrigin: true,
+        //         secure: false,
+        //         logLevel: "silent"
+        //         // secure: true
+        //     }
+        // }
     },
 
     devtool: 'cheap-module-eval-source-map',

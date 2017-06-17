@@ -30,7 +30,7 @@ export function fetchUser () {
         const content = JSON.stringify({
             access_token: token   //名字改成access_token
         })
-        return fetch('http://localhost:80/api/user', {
+        return fetch('http://www.fubd.site/api/user', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -76,7 +76,7 @@ export function selectAuthor(author){
 
 export function fetchItem(id){
     return dispatch=>{
-        return fetch(`http://localhost:80/api/detail/?id=${id}`)
+        return fetch(`http://www.fubd.site/api/detail/?id=${id}`)
         .then(res=>{
             return res.json()
         })
@@ -139,7 +139,7 @@ export function fetchPosts(author){
     return dispatch=>{
         // 开始fetch
         dispatch(requestPosts(author))
-        return fetch(`http://localhost:80/api/post?author=${author}`)
+        return fetch(`http://www.fubd.site/api/post?author=${author}`)
             .then(response=>response.json())
 
             // fetch 成功

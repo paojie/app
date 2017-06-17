@@ -34,7 +34,7 @@ class Publish extends React.Component {
                 access_token
             })
 
-        fetch('http://localhost:80/api/post', {
+        fetch('http://www.fubd.site/api/post', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

@@ -26,7 +26,7 @@ class Reg extends React.Component{
                 email
             })
 
-        fetch('http://localhost:80/api/signup',{
+        fetch('http://www.fubd.site/api/signup',{
             method: 'POST',
             headers:{
                 "Content-Type": "application/json",

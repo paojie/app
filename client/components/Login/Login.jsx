@@ -25,7 +25,7 @@ class Login extends React.Component {
 
         const content = JSON.stringify({name, passwd})
 
-        fetch('http://localhost:80/api/signin', { 
+        fetch('http://www.fubd.site/api/signin', { 
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
