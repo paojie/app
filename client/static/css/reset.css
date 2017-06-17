@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*chrome下autocomplete自动填充黄色*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset;  
+}
+
+
+/*各浏览器对常用行内替换元素的 'baseline' 位置理解不同。*/
+button, input, select, textarea {
+    vertical-align: bottom;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    background: none;
+}
+
+/* img 底部空隙 */
+img {
+    border: none;
+    display: block;  
+}
+/*清除浮动*/
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    font: 14px/1.4286 Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+button {
+    cursor: pointer;
+}

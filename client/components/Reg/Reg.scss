@@ -1,0 +1,46 @@
+#reg {
+    width: 300px;
+    height: 440px;
+    padding-top: 10px;
+    text-align: center;
+    border: 1px solid deeppink;
+    border-radius: 3px;
+    margin: 10px auto;
+    h1 {
+        color: hotpink;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+    .lin-box {
+        margin-bottom: 20px;
+        padding-left: 49px;
+        text-align: left;
+        label {
+            color: #000;
+            font-weight: 800
+        }
+        div {
+            width: 200px;
+            height: 40px;
+            margin-top: 10px;
+            border: 1px solid deeppink;
+            input {
+                line-height: 38px;
+                font-size: 16px;
+                padding-left: 16px;
+            }
+        }
+    }
+    .line {
+        margin: 30px 10px 30px 10px;
+        border-top: 1px solid #ccc;
+    }
+    .lin-btn {
+        width: 200px;
+        height: 40px;
+        background: orangered;
+        letter-spacing: 16px;
+        font-size: 16px;
+        color: #333;
+    }
+}

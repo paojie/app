@@ -1,0 +1,19 @@
+.inner {
+    height: 60px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-left: 40px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    .left {
+        float: left;
+        width: 40px;
+        height: 20px;
+        background: #eee;
+        text-align: center;
+        border-radius: 3px;
+        margin-right: 60px;
+    }
+}

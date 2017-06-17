@@ -1,0 +1,226 @@
+/*! Copyright by bdfu */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*chrome下autocomplete自动填充黄色*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset;  
+}
+
+
+/*各浏览器对常用行内替换元素的 'baseline' 位置理解不同。*/
+button, input, select, textarea {
+    vertical-align: bottom;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    background: none;
+}
+
+/* img 底部空隙 */
+img {
+    border: none;
+    display: block;  
+}
+/*清除浮动*/
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    font: 14px/1.4286 Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+button {
+    cursor: pointer;
+}#h-bar {
+  width: 100%;
+  height: 30px;
+  background: #ccc; }
+  #h-bar .bar-container .left {
+    float: left; }
+    #h-bar .bar-container .left span {
+      color: deeppink; }
+  #h-bar .bar-container .right {
+    float: right; }
+  #h-bar .bar-login-container {
+    font-size: 0;
+    padding-left: 40px;
+    line-height: 30px; }
+    #h-bar .bar-login-container span {
+      font-size: 16px; }
+    #h-bar .bar-login-container a {
+      font-size: 16px; }
+    #h-bar .bar-login-container button {
+      width: 80px;
+      height: 20px;
+      line-height: 20px;
+      transform: translateY(-12px);
+      font-size: 16px;
+      overflow: hidden; }
+#header {
+  width: 100%;
+  height: 120px;
+  background: #EDEDED; }
+  #header .h-title {
+    text-align: center;
+    color: deepskyblue;
+    line-height: 90px; }
+.inner {
+  height: 60px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee; }
+  .inner .left {
+    float: left;
+    width: 40px;
+    height: 20px;
+    background: #eee;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 60px; }
+#home {
+  margin: 0 auto;
+  width: 960px;
+  height: 700px;
+  border: 1px solid deeppink; }
+#login {
+  width: 300px;
+  height: 440px;
+  padding-top: 10px;
+  border: 1px solid deeppink;
+  text-align: center;
+  border-radius: 3px;
+  margin: 10px  auto; }
+  #login h1 {
+    color: hotpink;
+    letter-spacing: 10px;
+    margin-bottom: 20px; }
+  #login .lin-box {
+    margin-bottom: 20px;
+    padding-left: 49px;
+    text-align: left; }
+    #login .lin-box label {
+      color: #000;
+      font-weight: 800; }
+    #login .lin-box div {
+      width: 200px;
+      height: 40px;
+      margin-top: 10px;
+      border: 1px solid deeppink; }
+      #login .lin-box div input {
+        line-height: 38px;
+        font-size: 16px;
+        padding-left: 16px; }
+  #login .line {
+    margin: 30px 10px 30px 10px;
+    border-top: 1px solid #ccc; }
+  #login .lin-btn {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    background: orangered;
+    letter-spacing: 16px;
+    font-size: 16px;
+    color: #333; }
+#reg {
+  width: 300px;
+  height: 440px;
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid deeppink;
+  border-radius: 3px;
+  margin: 10px auto; }
+  #reg h1 {
+    color: hotpink;
+    letter-spacing: 10px;
+    margin-bottom: 20px; }
+  #reg .lin-box {
+    margin-bottom: 20px;
+    padding-left: 49px;
+    text-align: left; }
+    #reg .lin-box label {
+      color: #000;
+      font-weight: 800; }
+    #reg .lin-box div {
+      width: 200px;
+      height: 40px;
+      margin-top: 10px;
+      border: 1px solid deeppink; }
+      #reg .lin-box div input {
+        line-height: 38px;
+        font-size: 16px;
+        padding-left: 16px; }
+  #reg .line {
+    margin: 30px 10px 30px 10px;
+    border-top: 1px solid #ccc; }
+  #reg .lin-btn {
+    width: 200px;
+    height: 40px;
+    background: orangered;
+    letter-spacing: 16px;
+    font-size: 16px;
+    color: #333; }
+.pub {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  background: #EDEDED; }
+  .pub .title {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 3px;
+    padding-left: 16px; }
+  .pub .content {
+    width: 100%;
+    height: 190px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 3px;
+    padding-left: 16px; }
+  .pub .sub {
+    width: 50px;
+    height: 26px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background: #4CBFFF;
+    border-radius: 3px; }
+.detail {
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px; }
+  .detail .time {
+    margin-top: 30px; }
+    .detail .time .first {
+      color: hotpink; }
+  .detail .last {
+    height: 600px;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid #eee; }
